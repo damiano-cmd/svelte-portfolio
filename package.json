@@ -27,6 +27,6 @@
     "ssfx": "^0.0.2-fix",
     "svelte-preprocess": "^4.10.1",
     "svelte-routing": "^1.6.0",
-    "svfx": "^0.0.6-fix.2"
+    "svfx": "^0.0.6-minorupdate-fix6"
   }
 }

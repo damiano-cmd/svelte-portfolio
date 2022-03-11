@@ -1,6 +1,16 @@
 <script>
-    import {scrollFunctions, Animation, typeCorectionAnimation, typeAnimation} from "svfx"
-    let anim = Animation({name: "inBottom", once: true});
+    import {scrollFunctions, Animation, typeCorectionAnimation, Sequence} from "svfx"
+
+    let sequ = Sequence({
+        sequencer: "normal",
+        animations: [
+            {name: "inBottom", duration: 1500, once: true},
+            {name: "inBottom", duration: 1500, once: true},
+            {name: "inBottom", duration: 1500, once: true},
+            {name: "inBottom", duration: 1500, once: true}
+        ]
+    });
+    let [triger, [anim, anim1, anim2, anim3]] = sequ;
 
     import {SR, aboutme} from "../store"
 
@@ -15,24 +25,19 @@
     })
 </script>
 
-<div class="background">
-    <div 
-        class="personal" 
-        use:scrollFunctions={{fromBottom: 400, fromTop: 64}} 
-        on:enterscreen={anim}
-        >
+<div 
+    class="background"
+    use:scrollFunctions={{fromTop: 64, fromBottom: "50"}}
+    on:enterscreen={() => triger()}
+    >
+    <div class="personal" use:anim1 >
         <img src="/img/personal.png" alt="#">
     </div>
     <div class="text" >
-        <h1 use:scrollFunctions={{fromBottom: 200, fromTop: 64}} on:enterscreen={Animation({name: "inBottom", once: true})} >
+        <h1 use:anim2 >
             {(sr) ? "O meni" : "About Me"}
         </h1>
-        <div class="flex"
-            use:scrollFunctions={{fromBottom: 200, fromTop: 64}} 
-            on:enterscreen={(e) => {
-                anim(e);
-            }} 
-        >
+        <div class="flex" use:anim3 >
             <p>
                 {text[0]}
             </p>
@@ -48,12 +53,7 @@
                 %|
             </p>
         </div>
-        <p
-            use:scrollFunctions={{fromBottom: 200, fromTop: 64}} 
-            on:enterscreen={(e) => {
-                anim(e);
-            }} 
-        >
+        <p use:anim>
             {#each text[1] as i}
                 {#if typeof i == "number"}
                     <br><br>
@@ -73,20 +73,24 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .personal {
         position: relative;
         background-color: white;
 
-        width: 30rem;
-        height: 30rem;
+        max-width: 30rem;
+        max-height: 30rem;
+
+        width: 100%;
+        height: 100%;
 
         display: flex;
         align-items: center;
         justify-content: center;
 
         border-radius: 50%;
-        margin: 4rem 2rem;
+        margin: 2rem;
         overflow: hidden;
 
         border: .5rem solid #00a3e4;
@@ -94,6 +98,10 @@
         border-bottom-color: #bbb;
 
         opacity: 0;
+
+        @media (max-width: 30rem) {
+            border-radius: 12px;
+        }
 
         img {
             position: relative;
@@ -103,18 +111,22 @@
         }
     }
     .text {
+        max-width: 100%;
         color: #fff;
 
         display: flex;
         flex-direction: column;
+        align-items: center;
 
-        padding: 4rem;
+        padding: 2rem 4rem;
 
         .flex {
             width: 51rem;
             max-width: 90%;
             display: flex;
             flex-wrap: wrap;
+
+            align-items: center;
 
             opacity: 0;
 

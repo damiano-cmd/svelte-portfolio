@@ -24,6 +24,7 @@
 {/if}
 
 <nav >
+    <img src="/favicon.png" alt="">
     <button class="burgar" on:click={() => {ison = !ison}} >
         <span></span>
         <span class="m"></span>
@@ -32,7 +33,11 @@
     <ul class="links" class:move={ison} >
         {#each links as i}
             <li> 
-                <button on:click={() => {navigate(i); ison = false}} >{i}</button> 
+                <button 
+                    on:click={() => {navigate(i); ison = false}} 
+                    >
+                    {i}
+                </button> 
             </li>
         {/each}
     </ul>
@@ -52,6 +57,19 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+
+        img {
+            position: absolute;
+            top: .25rem;
+            left: 16px;
+
+            width: 3.5rem;
+            height: auto;
+
+            opacity: 0;
+
+            animation: inBottom 1.5s ease 1.5s forwards;
+        }
 
         .links {
             list-style: none;
@@ -79,6 +97,10 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
+                    opacity: 0;
+
+                    animation: inBottom 1.5s ease 2s forwards;
                 }
             }
         }
@@ -105,7 +127,7 @@
             z-index: 11;
         }
 
-        @media (max-width: 50rem) {
+        @media (max-width: 56rem) {
             justify-content: flex-end;
 
             .links {

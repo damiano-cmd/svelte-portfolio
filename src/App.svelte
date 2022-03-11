@@ -70,6 +70,12 @@
 			})
 		.catch(err => {
 			if (err) throw err
+			skills.set(skillsen);
+			services.set(servicesen);
+			projects.set(projectsen);
+			aboutme.set(aboutmeen);
+			links = linksen;
+			SR.set(false);
 		})
 </script>
 
@@ -114,9 +120,9 @@
 <style lang="scss" >
 	main {
 		z-index: -1;
-
 		> div {
 			width: 100%;
+			overflow: hidden;
 		}
 
 		.sh {

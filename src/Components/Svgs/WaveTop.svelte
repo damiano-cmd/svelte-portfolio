@@ -4,8 +4,6 @@
 
 <div class="limit">
 	<div class="curve2"
-		use:scrollFunctions
-		on:enterscreen={Animation({name: "scaleUpSide", duration: 2000, once: true})} 
 	>
 		<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" 
 		>
@@ -20,11 +18,11 @@
 		overflow: hidden;
 
 		.curve2 {
-			width: 0;
+			width: 100%;
 			min-width: 50rem;
 			overflow: hidden;
 			line-height: 0;
-			height: 0;
+			height: 6rem;
 
 			padding-top: 4rem;
 

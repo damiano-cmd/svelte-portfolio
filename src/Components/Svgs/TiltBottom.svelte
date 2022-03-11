@@ -1,10 +1,5 @@
-<script>
-	import {scrollFunctions, Animation} from "svfx"
-</script>
 
 <div class="curve1"
-	use:scrollFunctions={{fromBottom: 60}}
-	on:enterscreen={Animation({name: "scaleUp", once: true})}  
 >
   <svg 
 		data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" 
@@ -21,7 +16,7 @@
     overflow: hidden;
     line-height: 0;
 		padding-bottom: 2rem;
-		height: 0;
+		height: 6rem;
 
 		svg {
 			position: relative;

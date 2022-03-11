@@ -52,6 +52,7 @@
       <button type="submit">{(sr) ? "Pošalji" : "Send"} </button>
     </form> 
   </span>
+  <p>Copyright © 2022</p>
 </div>
 
 <style lang="scss">
@@ -62,6 +63,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+    > p {
+      color: gray;
+    }
 
     span {
 

@@ -4,13 +4,20 @@
   export let title;
   export let text;
   export let link;
+
+  import {SR} from "../store"
+
+  let sr;
+  SR.subscribe(r => {
+      sr = r;
+  })
 </script>
 
 <article use:scrollFunctions={{fromBottom: 200, fromTop: 64}} on:enterscreen={Animation({name: "inScale", once: true})} >
   <img src={img} alt="#">
   <h2>{title}</h2>
   <p>{text}</p>
-  <a href={link}>[Link to project]</a>
+  <a href={link} target="_blank">[{(sr) ? "Link za projekat" : "Link to project"}]</a>
 </article>
 
 <style lang="scss" >

@@ -21,17 +21,17 @@ export const aboutmeen = [
     ]
 ]
 export const omeni = [
-    "Zdravo, ja imam 17 godina i ja sam:",
+    "Zdravo, ime mi je David, imam 17 godina, ja sam:",
     [
-        "Ja sam samo-naučen programer i full stack web developer baziran u Bosni. Počeo sam učiti web-development sa 15 godina I od tad učim sve više. Ono što me je uvelo u programiranje je želja da pravim interesantne stvari i aplikacije, tad sam saznao sa imam talenat za programiranje.",
+        "Idem u srednju školu u kojoj učim programiranje ali sam i samostalno naučio puno toga. Nalazim se u Bosni. Počeo sam učiti web-development sa 15 godina i od tad učim sve više. Ono što me je uvelo u programiranje je želja da pravim interesantne stvari i aplikacije. Tad sam saznao da imam talenat za programiranje.",
         0,
-        "Prvi programski jezik koji sam naučio je Python i odma polije sam naučio JavaScript. Glavna stvar koju radim je full stack web-development ali isto radim Python programiranje i aplikativni development. Amater sam i još nisam imao posao u svojoj profesiji. Bilo je zabavno učiti programiranje i web-development i dizajn.",
+        "Prvi programski jezik koji sam naučio je Python, a zatim JavaScript. Glavna stvar koju radim je full stack web-development ali isto radim Python programiranje i aplikativni development. Amater sam i još nisam imao posao u svojoj profesiji. Bilo je zabavno učiti programiranje i web-development i dizajn.",
         0,
         "Plan mi je da naučim mobile development sa Fluter-om, web/desktop development sa Electronjs, QT6 i naučiti Redis i mySQL za back-end baze podataka.",
         0,
-        "Volim raditi lične pojekte i praviti svoje web aplikacije i programe. Napravio sam ovaj sajt da pokažem svoje web-dizajn i web-development vještine. Moj prvi porfolio sajt se može naći u pojekti sekciji.",
+        "Volim raditi lične projekte i praviti svoje web aplikacije i programe. Napravio sam ovaj sajt da pokažem svoje web-dizajn i web-development vještine. Moj prvi porfolio sajt se može naći u projekt sekciji.",
         0,
-        "Voljeo bih da pomognem svojim klientima oko nihovih projekata. Pošaljite mi email i pročaćemo."
+        "Volio bih da pomognem svojim klijentima oko njihovih projekata. Dajem i instrukcije. Pošaljite mi email i pričaćemo."
     ]
 ]
 export const aboutme = writable(omeni);
@@ -136,7 +136,7 @@ export const vjestine = {
             "img": "css.png",
             "title": "CSS",
             "text": "Veoma dobar u CSS-u i Sass-u.",
-            subtext: "Ne volim kristiti obicni CSS."
+            subtext: "Ne volim koristiti obicni CSS."
         },
         {
             "img": "sass.png",
@@ -148,19 +148,19 @@ export const vjestine = {
             "img": "js.jpg",
             "title": "JavaScript",
             "text": "Srednje-Napredan nivo vještine u JavaScript.",
-            subtext: "Vemona dobro znam vanilla JavaScript ali ga toliko i ne koristim."
+            subtext: "Veoma dobro znam vanilla JavaScript ali ga toliko ne koristim."
         },
         {
             "img": "python.png",
             "title": "Python programiranje",
-            "text": "Napredan nivo vještine u Python programirenju.",
-            subtext: "Znam osnove i par modula za prevljenje aplikacija i programa."
+            "text": "Napredan nivo vještine u Python programiranju.",
+            subtext: ""
         },
         {
             "img": "cpp.png",
             "title": "C++ programiranje",
-            "text": "Vešt u C++.",
-            subtext: "Ne koristim ga često. više za lične projekte."
+            "text": "Vješt u C++.",
+            subtext: ""
         }
     ],
     "Front-end": [
@@ -173,28 +173,28 @@ export const vjestine = {
         {
             "img": "nextjs.png",
             "title": "Next.js",
-            "text": "Ovaj framework je uredan ali ne volim da radim u njemu.",
-            subtext: "Ovo je drugi framework koji sam naučio. Sa njim sam napravio jednu webaplikaciju, nije dobar design ali redi šta želim."
+            "text": "Ovaj framework je uredan.",
+            subtext: "Sa njim sam napravio jednu web aplikaciju."
         },
         {
             "img": "svelte.png",
             "title": "Sveltejs",
             "text": "Srednji novi vještine u Svelte.js framework-u.",
-            subtext: "Ovo je framework u kojem volim raditi."
+            subtext: ""
         }
     ],
     "Back-end": [
         {
             "img": "nodejs.png",
             "title": "Node",
-            "text": "Ovo je back-end rešenje koje ja koristim za webaplikacije ili sajtove.",
-            subtext: "Ovo je jedini back-end servic koji ja koristim."
+            "text": "Ovo je back-end rešenje koje koristim za web aplikacije ili sajtove.",
+            subtext: ""
         },
         {
             "img": "expressjs.png",
             "title": "Express.js",
-            "text": "Express je back-end framework koji služi za pojednaštavnje pravljenja servera.",
-            subtext: "Isto ovo je jedini back-end framework koji znam."
+            "text": "Express je back-end framework koji služi za jednostavnije pravljenje servera.",
+            subtext: ""
         },
         {
             "img": "rest.png",
@@ -205,7 +205,7 @@ export const vjestine = {
         {
             "img": "mongo.png",
             "title": "Mongo",
-            "text": "MongoDB je jednina baza podataka u kojoj znam raditi.",
+            "text": "MongoDB je baza podataka u kojoj radim.",
             subtext: "Imam plan da dodam Redis i mySQL na svoj repertoar."
         }
     ]
@@ -260,42 +260,42 @@ export const usluge = [
     {
         "img": "web-dev.png",
         "title": "Front-End Web Development",
-        "text": "Mogu napraviti i isprogramirati cijelu front-end aplikaciju koristeći Svelte or Reach, sve po mjeri i želji klienta. Mogu isto dodati PWA (Prograssive Web App)."
+        "text": "Programiram i dizajniram cijelu front-end aplikaciju koristeći Svelte or Reach, sve po mjeri i želji klijenta. Mogu isto dodati PWA (Prograssive Web App)."
     },
     {
         "img": "responsive.png",
         "title": "Responzivan Dizajn",
-        "text": "Mogu dodati responzivan dizajn na vebsajt koju izrađujem ili na već gotov vebsajt za sve uređaje od desktop-a do mobilnih telefona."
+        "text": "Dodajem responzivan dizajn na vebsajt koji izrađujem ili na već gotov vebsajt za sve uređaje od desktop-a do mobilnih telefona."
     },
     {
         "img": "backend.png",
         "title": "Backend development",
-        "text": "Sa Nodejs, Expressjs i MongoDB mogu napraviti back-end server sa povezanom bazom podataka, ugrađenim REST API i svim po clientovim potrebama."
+        "text": "Sa Nodejs, Expressjs i MongoDB pravim back-end server sa povezanom bazom podataka, ugrađenim REST API po klijentovim potrebama."
     },
     {
         "img": "js.jpg",
         "title": "JavaScript Programiranje",
-        "text": "Programiranje i pomoć u običnom JavaScript-u i Node.js-u je servis koji dajem svojem klientima. Podučavanje JS-a je opcija."
+        "text": "Programiranje i pomoć u običnom JavaScript-u i Node.js-u je usluga koju dajem svojem klijentima. Podučavanje JS-a je opcija."
     },
     {
         "img": "MERN.png",
         "title": "MERN full stack development",
-        "text": "Ja mogu napraviti, podnoviti i odražavati fullstek MERN web aplikaciju. Sve je prilagođeno po klientovim ženjama."
+        "text": "Izrada, obnova i odražavanje fullstek MERN web aplikacije. Sve je prilagođeno po mjeri."
     },
     {
         "img": "nextjs-white.png",
         "title": "SSR framework development",
-        "text": "Jedini SSR framework koji znam je Next.js jer sam ga koristio prije da napravim fullstek aplikaciju. Mogu napraviti novi aplikaciju ili obnoviti staru.."
+        "text": "SSR framework koji koristim za izradu novih i obnovu starih aplikacija je Next.js."
     },
     {
         "img": "python.png",
         "title": "Python Scriptovanje",
-        "text": "Svojim klientima pružam Python scriptovanje i pravljenje Python aplikacija i programa. Podučavanje Python-a je opcija."
+        "text": "Svojim klijentima pružam Python scriptovanje i pravljenje Python aplikacija i programa. Podučavanje Python-a je opcija."
     },
     {
         "img": "cpp.png",
         "title": "C++ Programiranje",
-        "text": "Mogu pomoći oko C++ programiranje. Podučavanje je opcija."
+        "text": "Podučavam C++ programiranje."
     }
 ]
 export const services = writable(usluge)
@@ -361,19 +361,19 @@ export const projekti = [
     {
         img: "/img/npm_logo.png",
         title: "Svelte Sharp UI",
-        text: "Ovo je moj npm modul sa Svelte UI Componentima.",
+        text: "NPM modul sa Svelte UI Componentima.",
         link: "https://www.npmjs.com/package/svelte-sharp-ui"
     },
     {
         img: "/img/npm_logo.png",
         title: "Svelte ScrollFX (Napušteno)",
-        text: "Moj npm modul koji dodaje animacije i scrolling efekte.",
+        text: "NPM modul koji dodaje animacije i scrolling efekte.",
         link: "https://www.npmjs.com/package/ssfx"
     },
     {
         img: "/img/npm_logo.png",
         title: "Svelte FX",
-        text: "Ovo je dirivitiv Svelte ScrollFX-a ali daje više efekata.",
+        text: "Dirivitiv Svelte ScrollFX-a sa više efekata.",
         link: "https://www.npmjs.com/package/svfx"
     },
     {
@@ -391,7 +391,7 @@ export const projekti = [
     {
         img: "/img/QtBS4.png",
         title: "BeautifulSoupGUI",
-        text: "GUI aplikacija za BeautifulSoup4 napravljena u PyQt5, ovo kopa vebsajtove i izbacuje rezultate.",
+        text: "GUI aplikacija za BeautifulSoup4 napravljena u PyQt5, ovo kopa po vebsajtovima i izbacuje rezultate.",
         link: "https://github.com/damiano-cmd/BSGUI/"
     },
     {
@@ -403,7 +403,7 @@ export const projekti = [
     {
         img: "/img/svelteBlank.png",
         title: "'Todo' aplikacija",
-        text: "Jednostavna i ljepo diajnirana 'todo' aplikacija.",
+        text: "Jednostavna i ljepo dizajnirana 'todo' aplikacija.",
         link: "https://damiano-cmd.github.io/my-todo-app/"
     },
     {
